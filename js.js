@@ -9,6 +9,7 @@ $("input[type='button']").click(function(e) {
     cl($(this).val());
     switch ($(this).val()) {
         case 'Add':
+            // $('.main_div').css('display', 'none');
             (async() => {
                 const {
                     value: formValues

@@ -2,54 +2,54 @@
 <html>
 
 <head>
-  <title>WorkerCRUD</title>
-  <meta name="viewport" content="width=device-width,initial-scale=1">
-  <link rel="shortcut icon" type="image/png" href="http://pre11.deviantart.net/3944/th/pre/i/2012/122/6/9/cookie_monster_by_neorame-d4yb0b5.png" />
-  <!--Jquery-->
-  <script src="http://code.jquery.com/jquery-3.3.1.js"></script>
-  <script src="https://unpkg.com/sweetalert2@7.21.1/dist/sweetalert2.all.js"></script>
-  <!--Bootstrap 3.3.7-->
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-  <!-- Optional theme -->
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css">
+    <title>WorkerCRUD</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <link rel="shortcut icon" type="image/png" href="http://pre11.deviantart.net/3944/th/pre/i/2012/122/6/9/cookie_monster_by_neorame-d4yb0b5.png" />
+    <!--Jquery-->
+    <script src="http://code.jquery.com/jquery-3.3.1.js"></script>
+    <script src="https://unpkg.com/sweetalert2@7.21.1/dist/sweetalert2.all.js"></script>
+    <!--Bootstrap 3.3.7-->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <!-- Optional theme -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css">
 </head>
 
 <body>
-  <div class="main_container">
-    <div class="main_div">
-      <span id="title">WorkerCRUD</span>
-      <div class="btn-group" role="group" aria-label="Basic example">
-        <input type="button" class="button2" value="Add">
-        <input type="button" class="button2" value="Get">
-        <input type="button" class="button2" value="Update">
-        <input type="button" class="button2" value="Delete">
-        <input type="button" class="button2" value="Get All">
-      </div>
+    <div class="main_container">
+        <div class="main_div">
+            <span id="title">WorkerCRUD</span>
+            <div class="btn-group" role="group" aria-label="Basic example">
+                <input type="button" class="button2 btn-success" value="Add">
+                <input type="button" class="button2 btn-primary" value="Get">
+                <input type="button" class="button2 btn-warning" value="Update">
+                <input type="button" class="button2 btn-danger" value="Delete">
+                <input type="button" class="button2 btn-primary" value="Get All">
+            </div>
+        </div>
     </div>
-  </div>
 
-  <script>
-    //set css/js links with random string for caching issues prevention
-    var csshref = 'css.css';
-    var jshref = 'js.js';
-    var date = new Date().getTime();
-    $('<link>', {
-      rel: "stylesheet",
-      type: "text/css",
-      href: csshref + "?" + date,
-      func: function() {
-        console.log($(this))
-      }
-    }).appendTo($('head'));
-    $('<script>', {
-      src: jshref + '?' + date,
-      func: function() {
-        console.log($(this))
-      }
-    }).appendTo($('body'));
-  </script>
+    <script>
+        //set css/js links with random string for caching issues prevention
+        var csshref = 'css.css';
+        var jshref = 'js.js';
+        var date = new Date().getTime();
+        $('<link>', {
+            rel: "stylesheet",
+            type: "text/css",
+            href: csshref + "?" + date,
+            func: function() {
+                console.log($(this))
+            }
+        }).appendTo($('head'));
+        $('<script>', {
+            src: jshref + '?' + date,
+            func: function() {
+                console.log($(this))
+            }
+        }).appendTo($('body'));
+    </script>
 
-  <body>
+    <body>
 
 </html>
